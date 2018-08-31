@@ -241,8 +241,8 @@ class LifecycleRuleSetItemStorageClass(dict):
         rule = {
             'action': {
                 'type': 'SetStorageClass',
-                'storageClass': storage_class,
             },
+            'storageClass': storage_class,
             'condition': dict(conditions),
         }
         super(LifecycleRuleSetItemStorageClass, self).__init__(rule)
@@ -257,8 +257,7 @@ class LifecycleRuleSetItemStorageClass(dict):
         :rtype: :class:`LifecycleRuleDeleteItem`
         :returns: Instance created from resource.
         """
-        action = resource['action']
-        instance = cls(action['storageClass'], _factory=True)
+        instance = cls(resource['storageClass'], _factory=True)
         instance.update(resource)
         return instance
 

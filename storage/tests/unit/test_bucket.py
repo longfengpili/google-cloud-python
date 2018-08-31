@@ -173,8 +173,8 @@ class Test_LifecycleRuleSetItemStorageClass(unittest.TestCase):
         expected = {
             'action': {
                 'type': 'SetStorageClass',
-                'storageClass': 'NEARLINE',
             },
+            'storageClass': 'NEARLINE',
             'condition': {
                 'age': 10,
                 'matchesStorageClass': 'REGIONAL',
@@ -194,8 +194,8 @@ class Test_LifecycleRuleSetItemStorageClass(unittest.TestCase):
         resource = {
             'action': {
                 'type': 'SetStorageClass',
-                'storageClass': 'NEARLINE',
             },
+            'storageClass': 'NEARLINE',
             'condition': conditions,
         }
         rule = klass.from_api_repr(resource)
@@ -1132,8 +1132,8 @@ class Test_Bucket(unittest.TestCase):
         SSC_RULE = {
             'action': {
                 'type': 'SetStorageClass',
-                'storageClass': 'NEARLINE',
             },
+            'storageClass': 'NEARLINE',
             'condition': {
                 'isLive': False,
             },
@@ -1165,8 +1165,8 @@ class Test_Bucket(unittest.TestCase):
         SSC_RULE = {
             'action': {
                 'type': 'SetStorageClass',
-                'storageClass': 'NEARLINE',
             },
+            'storageClass': 'NEARLINE',
             'condition': {
                 'isLive': False,
             },
@@ -1197,8 +1197,8 @@ class Test_Bucket(unittest.TestCase):
         SSC_RULE = {
             'action': {
                 'type': 'SetStorageClass',
-                'storageClass': 'NEARLINE',
             },
+            'storageClass': 'NEARLINE',
             'condition': {
                 'isLive': False,
             },
